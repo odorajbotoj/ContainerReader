@@ -1,28 +1,18 @@
-# LeviLamina Plugin Template
+# ContainerReader
 
-A LeviLamina plugin template
+ContainerReader for LeviLamina.
 
-This plugin is a template for developing LeviLamina plugins.
+[https://github.com/YQ-LL-Plugins/ContainerReader](https://github.com/YQ-LL-Plugins/ContainerReader)的LL3重构。
 
 ## Install
 
-Generate a new repository from this template.
+Use lip:
+
+`lip install github.com/odorajbotoj/ContainerReader`
 
 ## Usage
 
-Before using this plugin template, make sure that you have installed XMake and a Minecraft Bedrock Server with LeviLamina.
-
-1. Clone the new repository into a local folder.
-
-1. Change the plugin name and the expected LeviLamina version in `xmake.lua`.
-
-1. Add your code.
-
-1. Run `xmake repo -u` in the root of the repository.
-
-1. Run `xmake` to build the plugin.
-
-Now the build is complete at `bin/`.
+如右键点击无法打开的容器，将在聊天栏输出容器内的物品信息，便于观察。正常可以打开的容器不会收到本插件影响。
 
 ## Contributing
 
@@ -32,4 +22,4 @@ PRs accepted.
 
 ## License
 
-CC0-1.0 © LiteLDev
+MIT License
