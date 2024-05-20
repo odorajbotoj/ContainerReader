@@ -2,14 +2,14 @@
 
 #include "ll/api/plugin/NativePlugin.h"
 
-namespace my_plugin {
+namespace container_reader {
 
-class MyPlugin {
+class ContainerReader {
 
 public:
-    static MyPlugin& getInstance();
+    static ContainerReader& getInstance();
 
-    MyPlugin(ll::plugin::NativePlugin& self) : mSelf(self) {}
+    ContainerReader(ll::plugin::NativePlugin& self) : mSelf(self) {}
 
     [[nodiscard]] ll::plugin::NativePlugin& getSelf() const { return mSelf; }
 
@@ -30,4 +30,4 @@ private:
     ll::plugin::NativePlugin& mSelf;
 };
 
-} // namespace my_plugin
+} // namespace container_reader
