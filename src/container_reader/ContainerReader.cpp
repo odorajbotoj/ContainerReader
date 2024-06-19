@@ -59,8 +59,8 @@ bool ContainerReader::enable() {
     evListener =
         eventBus.emplaceListener<ll::event::PlayerInteractBlockEvent>([](ll::event::PlayerInteractBlockEvent& ev) {
             auto&       bs = ev.self().getDimension().getBlockSourceFromMainChunkSource();
-            const auto& bl = bs.getBlock(ev.pos());
-            auto*       ba = bs.getBlockEntity(ev.pos());
+            const auto& bl = bs.getBlock(ev.blockPos());
+            auto*       ba = bs.getBlockEntity(ev.blockPos());
             if (bl.isContainerBlock() && ba) {
                 auto type = ba->getType();
                 if (type == BlockActorType::Chest || type == BlockActorType::ShulkerBox) {
